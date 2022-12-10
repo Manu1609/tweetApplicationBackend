@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.tweetApp.entity.TweetPost;
 import com.tweetApp.entity.User;
 import com.tweetApp.repository.UserRepository;
 import com.tweetApp.request.CreateUserRequest;
@@ -41,10 +42,15 @@ public class UserServiceImpl implements UserService {
 				login = true;
 			}
 		}
-		if (user == null) {
-			login = false;
-		}
 		return login;
+	}
+
+	
+	public Boolean changePassword(String userName, String password) {
+		//Boolean user =
+				userRepository.changePassword(userName,password);
+		//System.out.println(user);
+		return true;
 	}
 
 }

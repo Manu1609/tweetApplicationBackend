@@ -18,4 +18,8 @@ public interface TweetService {
 	void deleteTweet(int tweetid);
 
 	List<TweetPost> getAllTweetsOfUsername(String username);
+
+	TweetPost getLikeCount(Integer tweetid);
+
+	TweetPost getTweetsOfTweetId(Integer tweetid);
 }

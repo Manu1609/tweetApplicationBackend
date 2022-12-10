@@ -46,9 +46,16 @@ public class TweetLike {
 	@Column( length = 45)
 	private Integer tweetid;
 	
-	public TweetLike(CreateLikeRequest createLikeRequest, Integer tweetid, String username) {
+	public TweetLike(Integer tweetid, String username) {
+		this.tweetBoolean = false;
+		this.tweetLikeId = getTweetLikeId();
+		this.username = username;
+		this.tweetid = tweetid;
+	}
+	
+	public TweetLike(CreateLikeRequest createLikeRequest ,Integer tweetid, String username) {
 		this.tweetBoolean = createLikeRequest.isTweetBoolean();
-		this.tweetLikeId = createLikeRequest.getTweetLikeId();
+		this.tweetLikeId = getTweetLikeId();
 		this.username = username;
 		this.tweetid = tweetid;
 	}

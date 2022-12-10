@@ -1,6 +1,6 @@
 package com.tweetApp.request;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,7 +15,7 @@ public class CreateReTweetRequest {
 	
 	private String retweet;
 	
-	private Date retweettime;
+	private LocalDateTime retweettime;
 	
 	private String username;
 	

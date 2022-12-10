@@ -18,6 +18,7 @@ import com.tweetApp.entity.User;
 import com.tweetApp.request.CreateTweetRequest;
 import com.tweetApp.request.CreateUserRequest;
 import com.tweetApp.request.UpdateTweetRequest;
+import com.tweetApp.service.LikeTweetService;
 import com.tweetApp.service.TweetService;
 
 @RestController
@@ -26,6 +27,8 @@ public class TweetController {
 	
     @Autowired
     private TweetService tweetService;
+    
+   
 
     @GetMapping("all")
 	public List<TweetPost> getAllTweets() {
@@ -39,10 +42,17 @@ public class TweetController {
 		return userTweets;
 	}
     
+    @GetMapping("/getTweet/{tweetid}")
+	public TweetPost getTweetsOfTweetId(@PathVariable("tweetid") Integer tweetid ) {
+		TweetPost tweet = tweetService.getTweetsOfTweetId(tweetid);
+		return tweet;
+    }
+    
     @PostMapping("/{username}/add")
    	public TweetPost tweetCreate(@PathVariable("username") String username ,@RequestBody CreateTweetRequest createTweetRequest) {
    		TweetPost tweetPost = tweetService.tweetCreate(createTweetRequest , username);
-
+   		
+   		
    		return new TweetPost(tweetPost);
    	}
     
@@ -56,5 +66,11 @@ public class TweetController {
     @DeleteMapping("/{username}/delete/{tweetid}")
    	public void deleteTweet(@PathVariable("username") String username,@PathVariable("tweetid") Integer tweetid) {
     	tweetService.deleteTweet(tweetid);
+   	}
+    
+    @GetMapping("/likeCount/{tweetid}")
+   	public TweetPost getLikeCount(@PathVariable("tweetid") Integer tweetid ) {
+   		TweetPost likeCount = tweetService.getLikeCount(tweetid);
+   		return likeCount;
    	}
 }

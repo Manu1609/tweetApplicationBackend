@@ -7,11 +7,11 @@
 		<version>2.7.5</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.tweetApp</groupId>
-	<artifactId>tweet_app</artifactId>
+	<groupId>com.tweetApplicationBackend</groupId>
+	<artifactId>tweet_applicationBackend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>tweet_app</name>
-	<description>tweetApp</description>
+	<description>tweetApplication</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>

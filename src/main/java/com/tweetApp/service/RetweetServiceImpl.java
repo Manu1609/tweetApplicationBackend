@@ -1,10 +1,11 @@
 package com.tweetApp.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.tweetApp.entity.ReTweetpost;
-import com.tweetApp.entity.TweetPost;
 import com.tweetApp.repository.ReTweetRepository;
 import com.tweetApp.request.CreateReTweetRequest;
 
@@ -27,12 +28,9 @@ public class RetweetServiceImpl implements RetweetService {
 		if(createReTweetRequest.getRetweet() != null && !createReTweetRequest.getRetweet().isEmpty()) {
 			reTweetPost.setRetweet(createReTweetRequest.getRetweet());
 		}
-//		if(updateTweetRequest.getTweetDate() != null && !((List<TweetPost>) updateTweetRequest.getTweetDate()).isEmpty()) {
-//			tweetPost.setTweetDate(updateTweetRequest.getTweetDate());
-//		}
-//		if(updateTweetRequest.getLikeCount() != null && !updateTweetRequest.getLikeCount().isEmpty()) {
-//			tweetPost.setLikeCount(updateTweetRequest.getLikeCount());
-//		}
+		
+		reTweetPost.setRetweettime(java.time.LocalDateTime.now());
+
 		if(createReTweetRequest.getUsername() != null && !createReTweetRequest.getUsername().isEmpty()) {
 			reTweetPost.setUsername(createReTweetRequest.getUsername());
 		}
@@ -43,6 +41,11 @@ public class RetweetServiceImpl implements RetweetService {
 	@Override
 	public void deleteTweet(int retweetid) {
 		reTweetRepository.deleteById(retweetid);
+	}
+
+	@Override
+	public List<ReTweetpost> getAllReTweetsByTweetId(int tweetid) {
+		return reTweetRepository.findByTweetid(tweetid);
 	}
 
 }

@@ -1,7 +1,10 @@
 package com.tweetApp.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -21,16 +24,22 @@ public class ReTweetController {
 	@Autowired
 	private RetweetService retweetService;
 	
+		@GetMapping("allRetweets/{tweetid}")
+		public List<ReTweetpost> getAllReTweets(@PathVariable("tweetid") Integer tweetid) {
+			List<ReTweetpost> allReTweets = retweetService.getAllReTweetsByTweetId(tweetid);
+			return allReTweets;
+		}
+	
 	  @PostMapping("/{username}/addRetweet/{tweetid}")
-	   	public ReTweetpost tweetCreate(@PathVariable("username") String username,@PathVariable("tweetid") Integer tweetid ,@RequestBody CreateReTweetRequest createReTweetRequest) {
+	   	public ReTweetpost reTweetCreate(@PathVariable("username") String username,@PathVariable("tweetid") Integer tweetid ,@RequestBody CreateReTweetRequest createReTweetRequest) {
 		  ReTweetpost reTweetpost = retweetService.reTweetCreate(createReTweetRequest , username,tweetid);
+			System.out.println(reTweetpost);
 	   		return new ReTweetpost(reTweetpost);
 	   	}
 	    
 	    @PutMapping("/{username}/updateRetweet/{retweetid}")
-	   	public ReTweetpost tweetUpdate(@PathVariable("username") String username,@PathVariable("retweetid") Integer retweetid ,@RequestBody CreateReTweetRequest createReTweetRequest) {
+	   	public ReTweetpost reTweetUpdate(@PathVariable("username") String username,@PathVariable("retweetid") Integer retweetid ,@RequestBody CreateReTweetRequest createReTweetRequest) {
 	    	ReTweetpost reTweetpost = retweetService.reTweetUpdate(createReTweetRequest , retweetid);
-	    		System.out.println(reTweetpost);
 	   		return new ReTweetpost(reTweetpost);
 	   	}
 	    

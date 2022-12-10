@@ -1,5 +1,6 @@
 package com.tweetApp.entity;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -20,29 +21,31 @@ import lombok.NoArgsConstructor;
 public class ReTweetpost {
     
 	@Id
-    @Column( length = 45)
     @GeneratedValue
+    @Column( length = 45)
     private Integer retweetid;
     @Column( length = 144)
     private String retweet;
     @Column( length = 45)
-    private Date retweettime;  
+    private LocalDateTime retweettime;  
     @Column( length = 45)
     private String username;
     @Column( length = 45)
     private Integer tweetid;
     
     public ReTweetpost(CreateReTweetRequest createReTweetRequest, String username, Integer tweetid) {
-		this.retweet = createReTweetRequest.getRetweet();
+    	this.retweetid = createReTweetRequest.getRetweetid();
+    	this.retweet = createReTweetRequest.getRetweet();
 		this.username = username;
-		this.retweettime = createReTweetRequest.getRetweettime();
+		this.retweettime = java.time.LocalDateTime.now();
 		this.tweetid =  tweetid;
 	}
 
 	public ReTweetpost(ReTweetpost reTweetpost) {
+		this.retweetid = reTweetpost.getRetweetid();
 		this.retweet = reTweetpost.getRetweet();
 		this.username = reTweetpost.getUsername();
-		this.retweettime = reTweetpost.getRetweettime();
+		this.retweettime = java.time.LocalDateTime.now();
 		this.tweetid =  reTweetpost.getTweetid();
 	}
 }

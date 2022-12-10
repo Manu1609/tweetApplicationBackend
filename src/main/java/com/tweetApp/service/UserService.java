@@ -15,4 +15,6 @@ public interface UserService {
 	User createUser(CreateUserRequest createUserRequest);
 
 	Boolean login(String username, String password);
+	
+	Boolean changePassword(String username,String password);
 }
