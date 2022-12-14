@@ -1,7 +1,5 @@
 package com.tweetApp.service;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -39,7 +37,6 @@ public class LikeTweetServiceImpl implements LikeTweetService {
 			tweetLikes.setUsername(username);
 			tweetLike = likeTweetRepository.save(tweetLikes);
 		}
-		System.out.println(tweetLike);
 		return tweetLike;
 	}
 

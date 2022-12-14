@@ -1,0 +1,43 @@
+2022-12-14 17:15:12,885 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-5] Getting TweetLike value of Username and TweetId
+2022-12-14 17:15:12,886 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-2] Getting all Retweets
+2022-12-14 17:15:14,206 INFO com.tweetApp.controller.TweetController [http-nio-9090-exec-7] Getting Tweets of Username
+2022-12-14 17:15:14,220 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-10] Getting TweetLike value of Username and TweetId
+2022-12-14 17:15:14,220 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-1] Getting all Retweets
+2022-12-14 17:15:20,149 INFO com.tweetApp.controller.TweetController [http-nio-9090-exec-6] Getting all Tweets
+2022-12-14 17:15:20,160 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-4] Getting TweetLike value of Username and TweetId
+2022-12-14 17:15:20,161 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-2] Getting all Retweets
+2022-12-14 17:15:34,833 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-8] Creating Tweet Like column to datbase
+2022-12-14 17:15:35,960 INFO com.tweetApp.controller.TweetController [http-nio-9090-exec-9] Getting all Tweets
+2022-12-14 17:15:35,972 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-6] Getting TweetLike value of Username and TweetId
+2022-12-14 17:15:35,974 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-3] Getting all Retweets
+2022-12-14 17:15:35,988 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-1] Getting all Retweets
+2022-12-14 17:15:35,988 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-4] Getting TweetLike value of Username and TweetId
+2022-12-14 17:15:38,163 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-10] Making Tweet Like Update
+2022-12-14 17:15:38,957 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-2] Making Tweet Like Update
+2022-12-14 17:15:45,448 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-2] Creating a Retweet
+2022-12-14 17:15:46,650 INFO com.tweetApp.controller.TweetController [http-nio-9090-exec-6] Getting all Tweets
+2022-12-14 17:15:46,663 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-5] Getting TweetLike value of Username and TweetId
+2022-12-14 17:15:46,664 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-7] Getting all Retweets
+2022-12-14 17:15:46,669 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-5] Getting all Retweets
+2022-12-14 17:15:46,669 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-10] Getting TweetLike value of Username and TweetId
+2022-12-14 17:15:50,064 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-3] Making Tweet Like Update
+2022-12-14 17:15:52,373 INFO com.tweetApp.controller.TweetController [http-nio-9090-exec-3] Getting Tweets of Username
+2022-12-14 17:15:52,388 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-2] Getting TweetLike value of Username and TweetId
+2022-12-14 17:15:52,390 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-4] Getting all Retweets
+2022-12-14 17:15:52,390 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-5] Getting TweetLike value of Username and TweetId
+2022-12-14 17:15:52,395 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-8] Getting all Retweets
+2022-12-14 17:15:59,604 INFO com.tweetApp.controller.TweetController [http-nio-9090-exec-3] Getting Tweets of Username
+2022-12-14 17:15:59,618 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-1] Getting TweetLike value of Username and TweetId
+2022-12-14 17:15:59,618 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-4] Getting all Retweets
+2022-12-14 17:15:59,619 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-2] Getting TweetLike value of Username and TweetId
+2022-12-14 17:15:59,623 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-5] Getting all Retweets
+2022-12-14 17:18:42,308 INFO com.tweetApp.controller.TweetController [http-nio-9090-exec-6] Getting all Tweets
+2022-12-14 17:18:42,330 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-1] Getting TweetLike value of Username and TweetId
+2022-12-14 17:18:42,334 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-5] Getting TweetLike value of Username and TweetId
+2022-12-14 17:18:42,334 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-8] Getting all Retweets
+2022-12-14 17:18:42,334 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-7] Getting all Retweets
+2022-12-14 17:19:01,511 INFO com.tweetApp.controller.TweetController [http-nio-9090-exec-7] Getting all Tweets
+2022-12-14 17:19:01,526 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-8] Getting TweetLike value of Username and TweetId
+2022-12-14 17:19:01,556 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-3] Getting all Retweets
+2022-12-14 17:19:01,573 INFO com.tweetApp.controller.LikeController [http-nio-9090-exec-6] Getting TweetLike value of Username and TweetId
+2022-12-14 17:19:01,590 INFO com.tweetApp.controller.ReTweetController [http-nio-9090-exec-4] Getting all Retweets

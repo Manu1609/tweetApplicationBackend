@@ -35,7 +35,6 @@ public class UserController {
 
 	@PostMapping("register")
 	public ResponseEntity<User> userCreate(@RequestBody CreateUserRequest createUserRequest) {
-		System.out.println(createUserRequest);
 		User user = userService.createUser(createUserRequest);
 
 		return new ResponseEntity<User>(user,HttpStatus.OK);
@@ -43,13 +42,11 @@ public class UserController {
 	@GetMapping("login/{username}/{password}")
 	public ResponseEntity<Boolean> userLogin(@PathVariable("username") String username,@PathVariable("password") String password) {
 		Boolean user = userService.login(username,password);
-		System.out.println(user);
 		return new ResponseEntity<Boolean>(user,HttpStatus.OK);
 	}
 	
 	@PostMapping("changePassword/{username}/{password}")
 	public ResponseEntity<Boolean> changePassword(@PathVariable("username") String username,@PathVariable("password") String password) {
-		System.out.println(password);
 		Boolean user = userService.changePassword(username,password);
 
 		return new ResponseEntity<Boolean>(user,HttpStatus.OK);

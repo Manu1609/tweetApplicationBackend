@@ -1,7 +1,6 @@
 package com.tweetApp.service;
 
 import java.util.List;
-import java.util.Optional;
 
 import com.tweetApp.entity.TweetPost;
 import com.tweetApp.request.CreateTweetRequest;

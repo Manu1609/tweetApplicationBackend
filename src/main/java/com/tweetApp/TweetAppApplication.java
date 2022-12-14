@@ -11,7 +11,15 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
+import springfox.documentation.builders.ApiInfoBuilder;
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @SpringBootApplication
+@EnableSwagger2
 @EntityScan("com.tweetApp.entity")
 @EnableJpaRepositories("com.tweetApp.repository")
 public class TweetAppApplication {
@@ -19,6 +27,19 @@ public class TweetAppApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TweetAppApplication.class, args);
 	}
+	
+	 @Bean
+	    public Docket docket() {
+	        return new Docket(DocumentationType.SWAGGER_2)
+	                .enable(true)
+	                .apiInfo(new ApiInfoBuilder()
+	                        .title("Swagger Super")
+	                        .description("Swagger Description details")
+	                        .version("1.0").build())
+	                .select()
+	                .apis(RequestHandlerSelectors.basePackage("com.tweetApp.controller"))
+	                .paths(PathSelectors.any()).build();
+	    }
 	
 	@Bean
 	public CorsFilter corsFilter() {

@@ -7,7 +7,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import com.tweetApp.entity.ReTweetpost;
-import com.tweetApp.entity.TweetPost;
 
 @Repository
 public interface ReTweetRepository extends JpaRepository<ReTweetpost,  Integer >{

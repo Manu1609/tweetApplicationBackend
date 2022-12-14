@@ -45,7 +45,8 @@ public class RetweetServiceImpl implements RetweetService {
 
 	@Override
 	public List<ReTweetpost> getAllReTweetsByTweetId(int tweetid) {
-		return reTweetRepository.findByTweetid(tweetid);
+		List<ReTweetpost> reTweetpost =  reTweetRepository.findByTweetid(tweetid);
+		return reTweetpost;
 	}
 
 }

@@ -1,7 +1,6 @@
 package com.tweetApp.controller;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -14,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tweetApp.entity.TweetPost;
-import com.tweetApp.entity.User;
 import com.tweetApp.request.CreateTweetRequest;
-import com.tweetApp.request.CreateUserRequest;
 import com.tweetApp.request.UpdateTweetRequest;
-import com.tweetApp.service.LikeTweetService;
 import com.tweetApp.service.TweetService;
 
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
+@Slf4j
 @RequestMapping("/api/v1.0/tweets")
 public class TweetController {
 	
@@ -33,12 +32,14 @@ public class TweetController {
     @GetMapping("all")
 	public List<TweetPost> getAllTweets() {
 		List<TweetPost> allTweets = tweetService.getAllTweets();
+		log.info("Getting all Tweets");
 		return allTweets;
 	}
     
     @GetMapping("/{username}")
 	public List<TweetPost> getAllTweetsOfUsername(@PathVariable("username") String username ) {
-		List<TweetPost> userTweets = tweetService.getAllTweetsOfUsername(username);
+		log.info("Getting Tweets of Username");
+    	List<TweetPost> userTweets = tweetService.getAllTweetsOfUsername(username);
 		return userTweets;
 	}
     

@@ -1,15 +1,12 @@
 package com.tweetApp.service;
 
-import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.tweetApp.controller.LikeController;
 import com.tweetApp.entity.TweetPost;
-import com.tweetApp.entity.User;
 import com.tweetApp.repository.TweetRepository;
 import com.tweetApp.request.CreateTweetRequest;
 import com.tweetApp.request.UpdateTweetRequest;
