@@ -17,4 +17,6 @@ public interface UserService {
 	Boolean login(String username, String password);
 	
 	Boolean changePassword(String username,String password);
+
+	Boolean forgotPassword(String username);
 }

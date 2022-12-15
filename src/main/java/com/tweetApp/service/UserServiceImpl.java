@@ -48,4 +48,18 @@ public class UserServiceImpl implements UserService {
 		return true;
 	}
 
+	@Override
+	public Boolean forgotPassword(String username) {
+		
+		User user = userRepository.findByUserName(username);
+		System.out.println(user);
+		if(user != null) {
+			userRepository.deleteByUsername(username);
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
 }
