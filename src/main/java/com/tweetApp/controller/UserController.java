@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.tweetApp.Kafka.Producer;
 import com.tweetApp.entity.User;
 import com.tweetApp.request.CreateUserRequest;
 import com.tweetApp.service.UserService;
@@ -24,6 +25,9 @@ public class UserController {
 
 	@Autowired
 	public UserService userService;
+	
+	@Autowired
+	public Producer producer;
 
 	
 	
@@ -41,6 +45,8 @@ public class UserController {
 	}
 	@GetMapping("login/{username}/{password}")
 	public ResponseEntity<Boolean> userLogin(@PathVariable("username") String username,@PathVariable("password") String password) {
+		
+//		producer.sendMessageToTopic(username);
 		Boolean user = userService.login(username,password);
 		return new ResponseEntity<Boolean>(user,HttpStatus.OK);
 	}
