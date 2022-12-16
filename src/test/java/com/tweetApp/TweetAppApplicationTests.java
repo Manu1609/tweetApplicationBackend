@@ -26,10 +26,10 @@ class TweetAppApplicationTests {
 	void contextLoads() {
 	}
 	
-	@Test
-	void main() {
-		TweetAppApplication.main(new String[] {});
-	}
+//	@Test
+//	void main() {
+//		TweetAppApplication.main(new String[] {});
+//	}
 
 	@Test
 	void testNoArgs() {
