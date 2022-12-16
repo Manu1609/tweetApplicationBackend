@@ -1,12 +1,1 @@
-2022-12-16 11:17:51,608 INFO com.tweetApp.TweetAppApplication [restartedMain] Starting TweetAppApplication using Java 18.0.2.1 on MSI with PID 8196 (C:\Users\gmano\eclipse-workspace\tweetApplicationBackend\target\classes started by gmano in C:\Users\gmano\eclipse-workspace\tweetApplicationBackend)
-2022-12-16 11:17:51,612 DEBUG com.tweetApp.TweetAppApplication [restartedMain] Running with Spring Boot v2.7.5, Spring v5.3.23
-2022-12-16 11:17:51,614 INFO com.tweetApp.TweetAppApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2022-12-16 11:17:57,507 INFO com.tweetApp.TweetAppApplication [restartedMain] Started TweetAppApplication in 6.234 seconds (JVM running for 7.794)
-2022-12-16 11:18:14,047 INFO com.tweetApp.entityTests.ReTweetTestEntity [main] Starting ReTweetTestEntity using Java 18.0.2.1 on MSI with PID 17432 (started by gmano in C:\Users\gmano\eclipse-workspace\tweetApplicationBackend)
-2022-12-16 11:18:14,052 DEBUG com.tweetApp.entityTests.ReTweetTestEntity [main] Running with Spring Boot v2.7.5, Spring v5.3.23
-2022-12-16 11:18:14,052 INFO com.tweetApp.entityTests.ReTweetTestEntity [main] No active profile set, falling back to 1 default profile: "default"
-2022-12-16 11:18:14,409 INFO com.tweetApp.entityTests.ReTweetTestEntity [main] Started ReTweetTestEntity in 0.835 seconds (JVM running for 3.38)
-2022-12-16 11:18:15,342 INFO com.tweetApp.TweetAppApplicationTests [main] Starting TweetAppApplicationTests using Java 18.0.2.1 on MSI with PID 17432 (started by gmano in C:\Users\gmano\eclipse-workspace\tweetApplicationBackend)
-2022-12-16 11:18:15,342 DEBUG com.tweetApp.TweetAppApplicationTests [main] Running with Spring Boot v2.7.5, Spring v5.3.23
-2022-12-16 11:18:15,343 INFO com.tweetApp.TweetAppApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
-2022-12-16 11:18:23,387 INFO com.tweetApp.TweetAppApplicationTests [main] Started TweetAppApplicationTests in 8.079 seconds (JVM running for 12.358)
+2022-12-16 11:29:29,888 INFO com.tweetApp.TweetAppApplication [restartedMain] Started TweetAppApplication in 1.337 seconds (JVM running for 700.176)
