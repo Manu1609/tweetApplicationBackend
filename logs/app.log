@@ -1,1 +1,38 @@
 2022-12-16 11:29:29,888 INFO com.tweetApp.TweetAppApplication [restartedMain] Started TweetAppApplication in 1.337 seconds (JVM running for 700.176)
+2022-12-16 11:30:08,048 INFO com.tweetApp.entityTests.ReTweetTestEntity [main] Starting ReTweetTestEntity using Java 18.0.2.1 on MSI with PID 9516 (started by gmano in C:\Users\gmano\eclipse-workspace\tweetApplicationBackend)
+2022-12-16 11:30:08,052 DEBUG com.tweetApp.entityTests.ReTweetTestEntity [main] Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-12-16 11:30:08,053 INFO com.tweetApp.entityTests.ReTweetTestEntity [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-16 11:30:08,315 INFO com.tweetApp.entityTests.ReTweetTestEntity [main] Started ReTweetTestEntity in 0.717 seconds (JVM running for 3.681)
+2022-12-16 11:30:09,520 INFO com.tweetApp.TweetAppApplicationTests [main] Starting TweetAppApplicationTests using Java 18.0.2.1 on MSI with PID 9516 (started by gmano in C:\Users\gmano\eclipse-workspace\tweetApplicationBackend)
+2022-12-16 11:30:09,520 DEBUG com.tweetApp.TweetAppApplicationTests [main] Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-12-16 11:30:09,520 INFO com.tweetApp.TweetAppApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-16 11:30:18,993 INFO com.tweetApp.TweetAppApplicationTests [main] Started TweetAppApplicationTests in 9.511 seconds (JVM running for 14.358)
+2022-12-16 11:30:34,198 INFO com.tweetApp.TweetAppApplication [restartedMain] Starting TweetAppApplication using Java 18.0.2.1 on MSI with PID 3600 (C:\Users\gmano\eclipse-workspace\tweetApplicationBackend\target\classes started by gmano in C:\Users\gmano\eclipse-workspace\tweetApplicationBackend)
+2022-12-16 11:30:34,200 DEBUG com.tweetApp.TweetAppApplication [restartedMain] Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-12-16 11:30:34,200 INFO com.tweetApp.TweetAppApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-12-16 11:30:38,660 INFO com.tweetApp.TweetAppApplication [restartedMain] Started TweetAppApplication in 4.668 seconds (JVM running for 5.353)
+2022-12-16 11:30:53,730 INFO com.tweetApp.TweetAppApplication [restartedMain] Starting TweetAppApplication using Java 18.0.2.1 on MSI with PID 3600 (C:\Users\gmano\eclipse-workspace\tweetApplicationBackend\target\classes started by gmano in C:\Users\gmano\eclipse-workspace\tweetApplicationBackend)
+2022-12-16 11:30:53,730 DEBUG com.tweetApp.TweetAppApplication [restartedMain] Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-12-16 11:30:53,731 INFO com.tweetApp.TweetAppApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-12-16 11:30:54,971 INFO com.tweetApp.TweetAppApplication [restartedMain] Started TweetAppApplication in 1.294 seconds (JVM running for 21.663)
+2022-12-16 11:30:59,209 INFO com.tweetApp.TweetAppApplication [restartedMain] Starting TweetAppApplication using Java 18.0.2.1 on MSI with PID 17920 (C:\Users\gmano\eclipse-workspace\tweetApplicationBackend\target\classes started by gmano in C:\Users\gmano\eclipse-workspace\tweetApplicationBackend)
+2022-12-16 11:30:59,211 DEBUG com.tweetApp.TweetAppApplication [restartedMain] Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-12-16 11:30:59,211 INFO com.tweetApp.TweetAppApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-12-16 11:31:03,930 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9090 or configure this application to listen on another port.
+
+2022-12-16 11:31:16,561 INFO com.tweetApp.TweetAppApplication [restartedMain] Starting TweetAppApplication using Java 18.0.2.1 on MSI with PID 10812 (C:\Users\gmano\eclipse-workspace\tweetApplicationBackend\target\classes started by gmano in C:\Users\gmano\eclipse-workspace\tweetApplicationBackend)
+2022-12-16 11:31:16,563 DEBUG com.tweetApp.TweetAppApplication [restartedMain] Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-12-16 11:31:16,563 INFO com.tweetApp.TweetAppApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-12-16 11:31:21,285 INFO com.tweetApp.TweetAppApplication [restartedMain] Started TweetAppApplication in 4.93 seconds (JVM running for 5.632)
